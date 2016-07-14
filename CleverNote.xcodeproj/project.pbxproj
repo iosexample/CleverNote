@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		234AD5B11CA2CDF300D24AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AD5B01CA2CDF300D24AA9 /* AppDelegate.swift */; };
+		234AD5B61CA2CDF300D24AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234AD5B41CA2CDF300D24AA9 /* Main.storyboard */; };
+		234AD5B81CA2CDF300D24AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234AD5B71CA2CDF300D24AA9 /* Assets.xcassets */; };
+		234AD5BB1CA2CDF300D24AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234AD5B91CA2CDF300D24AA9 /* LaunchScreen.storyboard */; };
+		234AD5C31CA2CE5200D24AA9 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AD5C21CA2CE5200D24AA9 /* NotesTableViewController.swift */; };
+		234AD5C51CA2D01A00D24AA9 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AD5C41CA2D01A00D24AA9 /* NoteViewController.swift */; };
+		234AD5C71CA2D07A00D24AA9 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AD5C61CA2D07A00D24AA9 /* Note.swift */; };
+		F60BA40C1D3236A500071294 /* DocumentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60BA40B1D3236A500071294 /* DocumentPickerViewController.swift */; };
+		F60BA40F1D3236A500071294 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60BA40D1D3236A500071294 /* MainInterface.storyboard */; };
+		F60BA41A1D3236A500071294 /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60BA4191D3236A500071294 /* FileProvider.swift */; };
+		F60BA41E1D3236A500071294 /* PickerFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F60BA4151D3236A500071294 /* PickerFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F60BA4211D3236A500071294 /* Picker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F60BA4071D3236A500071294 /* Picker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F60BA4281D35132500071294 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AD5C61CA2D07A00D24AA9 /* Note.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F60BA41C1D3236A500071294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 234AD5A51CA2CDF300D24AA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60BA4141D3236A500071294;
+			remoteInfo = PickerFileProvider;
+		};
+		F60BA41F1D3236A500071294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 234AD5A51CA2CDF300D24AA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60BA4061D3236A500071294;
+			remoteInfo = Picker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		234AD5F11CA2E4A200D24AA9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F60BA4211D3236A500071294 /* Picker.appex in Embed App Extensions */,
+				F60BA41E1D3236A500071294 /* PickerFileProvider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		234AD5AD1CA2CDF300D24AA9 /* CleverNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleverNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		234AD5B01CA2CDF300D24AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		234AD5B51CA2CDF300D24AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		234AD5B71CA2CDF300D24AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		234AD5BA1CA2CDF300D24AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		234AD5BC1CA2CDF300D24AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234AD5C21CA2CE5200D24AA9 /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; name = NotesTableViewController.swift; path = ../NotesTableViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		234AD5C41CA2D01A00D24AA9 /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		234AD5C61CA2D07A00D24AA9 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; tabWidth = 2; };
+		23ECFE671CA30E3A00E8529D /* CleverNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CleverNote.entitlements; sourceTree = "<group>"; };
+		F60BA4071D3236A500071294 /* Picker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Picker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60BA40A1D3236A500071294 /* Picker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Picker.entitlements; sourceTree = "<group>"; };
+		F60BA40B1D3236A500071294 /* DocumentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerViewController.swift; sourceTree = "<group>"; };
+		F60BA40E1D3236A500071294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F60BA4101D3236A500071294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F60BA4151D3236A500071294 /* PickerFileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PickerFileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60BA4181D3236A500071294 /* PickerFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PickerFileProvider.entitlements; sourceTree = "<group>"; };
+		F60BA4191D3236A500071294 /* FileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProvider.swift; sourceTree = "<group>"; };
+		F60BA41B1D3236A500071294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		234AD5AA1CA2CDF300D24AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60BA4041D3236A500071294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60BA4121D3236A500071294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		234AD5A41CA2CDF300D24AA9 = {
+			isa = PBXGroup;
+			children = (
+				234AD5AF1CA2CDF300D24AA9 /* CleverNote */,
+				F60BA4081D3236A500071294 /* Picker */,
+				F60BA4161D3236A500071294 /* PickerFileProvider */,
+				234AD5AE1CA2CDF300D24AA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		234AD5AE1CA2CDF300D24AA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				234AD5AD1CA2CDF300D24AA9 /* CleverNote.app */,
+				F60BA4071D3236A500071294 /* Picker.appex */,
+				F60BA4151D3236A500071294 /* PickerFileProvider.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		234AD5AF1CA2CDF300D24AA9 /* CleverNote */ = {
+			isa = PBXGroup;
+			children = (
+				234AD5B71CA2CDF300D24AA9 /* Assets.xcassets */,
+				23ECFE671CA30E3A00E8529D /* CleverNote.entitlements */,
+				234AD5CA1CA2E34000D24AA9 /* Model */,
+				95813EA11CC2AFE60055CA0E /* Storyboards */,
+				95813EA21CC2AFFE0055CA0E /* SupportFiles */,
+				234AD5CB1CA2E34E00D24AA9 /* View Controllers */,
+			);
+			path = CleverNote;
+			sourceTree = "<group>";
+		};
+		234AD5CA1CA2E34000D24AA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				234AD5C61CA2D07A00D24AA9 /* Note.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		234AD5CB1CA2E34E00D24AA9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				234AD5C41CA2D01A00D24AA9 /* NoteViewController.swift */,
+				234AD5C21CA2CE5200D24AA9 /* NotesTableViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		95813EA11CC2AFE60055CA0E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				234AD5B91CA2CDF300D24AA9 /* LaunchScreen.storyboard */,
+				234AD5B41CA2CDF300D24AA9 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		95813EA21CC2AFFE0055CA0E /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				234AD5B01CA2CDF300D24AA9 /* AppDelegate.swift */,
+				234AD5BC1CA2CDF300D24AA9 /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		F60BA4081D3236A500071294 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				F60BA40B1D3236A500071294 /* DocumentPickerViewController.swift */,
+				F60BA40D1D3236A500071294 /* MainInterface.storyboard */,
+				F60BA4101D3236A500071294 /* Info.plist */,
+				F60BA4091D3236A500071294 /* Supporting Files */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		F60BA4091D3236A500071294 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F60BA40A1D3236A500071294 /* Picker.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F60BA4161D3236A500071294 /* PickerFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				F60BA4191D3236A500071294 /* FileProvider.swift */,
+				F60BA41B1D3236A500071294 /* Info.plist */,
+				F60BA4171D3236A500071294 /* Supporting Files */,
+			);
+			path = PickerFileProvider;
+			sourceTree = "<group>";
+		};
+		F60BA4171D3236A500071294 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F60BA4181D3236A500071294 /* PickerFileProvider.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		234AD5AC1CA2CDF300D24AA9 /* CleverNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 234AD5BF1CA2CDF300D24AA9 /* Build configuration list for PBXNativeTarget "CleverNote" */;
+			buildPhases = (
+				234AD5A91CA2CDF300D24AA9 /* Sources */,
+				234AD5AA1CA2CDF300D24AA9 /* Frameworks */,
+				234AD5AB1CA2CDF300D24AA9 /* Resources */,
+				234AD5F11CA2E4A200D24AA9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F60BA41D1D3236A500071294 /* PBXTargetDependency */,
+				F60BA4201D3236A500071294 /* PBXTargetDependency */,
+			);
+			name = CleverNote;
+			productName = CleverNote;
+			productReference = 234AD5AD1CA2CDF300D24AA9 /* CleverNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F60BA4061D3236A500071294 /* Picker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60BA4251D3236A600071294 /* Build configuration list for PBXNativeTarget "Picker" */;
+			buildPhases = (
+				F60BA4031D3236A500071294 /* Sources */,
+				F60BA4041D3236A500071294 /* Frameworks */,
+				F60BA4051D3236A500071294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Picker;
+			productName = Picker;
+			productReference = F60BA4071D3236A500071294 /* Picker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F60BA4141D3236A500071294 /* PickerFileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60BA4221D3236A600071294 /* Build configuration list for PBXNativeTarget "PickerFileProvider" */;
+			buildPhases = (
+				F60BA4111D3236A500071294 /* Sources */,
+				F60BA4121D3236A500071294 /* Frameworks */,
+				F60BA4131D3236A500071294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PickerFileProvider;
+			productName = PickerFileProvider;
+			productReference = F60BA4151D3236A500071294 /* PickerFileProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		234AD5A51CA2CDF300D24AA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Dave Krawczyk";
+				TargetAttributes = {
+					234AD5AC1CA2CDF300D24AA9 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HC7879NQCX;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					F60BA4061D3236A500071294 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HC7879NQCX;
+					};
+					F60BA4141D3236A500071294 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HC7879NQCX;
+					};
+				};
+			};
+			buildConfigurationList = 234AD5A81CA2CDF300D24AA9 /* Build configuration list for PBXProject "CleverNote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 234AD5A41CA2CDF300D24AA9;
+			productRefGroup = 234AD5AE1CA2CDF300D24AA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				234AD5AC1CA2CDF300D24AA9 /* CleverNote */,
+				F60BA4061D3236A500071294 /* Picker */,
+				F60BA4141D3236A500071294 /* PickerFileProvider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		234AD5AB1CA2CDF300D24AA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				234AD5BB1CA2CDF300D24AA9 /* LaunchScreen.storyboard in Resources */,
+				234AD5B81CA2CDF300D24AA9 /* Assets.xcassets in Resources */,
+				234AD5B61CA2CDF300D24AA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60BA4051D3236A500071294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60BA40F1D3236A500071294 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60BA4131D3236A500071294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		234AD5A91CA2CDF300D24AA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				234AD5C31CA2CE5200D24AA9 /* NotesTableViewController.swift in Sources */,
+				234AD5C51CA2D01A00D24AA9 /* NoteViewController.swift in Sources */,
+				234AD5B11CA2CDF300D24AA9 /* AppDelegate.swift in Sources */,
+				234AD5C71CA2D07A00D24AA9 /* Note.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60BA4031D3236A500071294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60BA40C1D3236A500071294 /* DocumentPickerViewController.swift in Sources */,
+				F60BA4281D35132500071294 /* Note.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60BA4111D3236A500071294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60BA41A1D3236A500071294 /* FileProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F60BA41D1D3236A500071294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F60BA4141D3236A500071294 /* PickerFileProvider */;
+			targetProxy = F60BA41C1D3236A500071294 /* PBXContainerItemProxy */;
+		};
+		F60BA4201D3236A500071294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F60BA4061D3236A500071294 /* Picker */;
+			targetProxy = F60BA41F1D3236A500071294 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		234AD5B41CA2CDF300D24AA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				234AD5B51CA2CDF300D24AA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		234AD5B91CA2CDF300D24AA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				234AD5BA1CA2CDF300D24AA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F60BA40D1D3236A500071294 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F60BA40E1D3236A500071294 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		234AD5BD1CA2CDF300D24AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		234AD5BE1CA2CDF300D24AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		234AD5C01CA2CDF300D24AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CleverNote/CleverNote.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = CleverNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicalboy.CleverNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		234AD5C11CA2CDF300D24AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CleverNote/CleverNote.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = CleverNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicalboy.CleverNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F60BA4231D3236A600071294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PickerFileProvider/PickerFileProvider.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PickerFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicalboy.CleverNote.PickerFileProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F60BA4241D3236A600071294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PickerFileProvider/PickerFileProvider.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PickerFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicalboy.CleverNote.PickerFileProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F60BA4261D3236A600071294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Picker/Picker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Picker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicalboy.CleverNote.Picker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F60BA4271D3236A600071294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Picker/Picker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Picker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicalboy.CleverNote.Picker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		234AD5A81CA2CDF300D24AA9 /* Build configuration list for PBXProject "CleverNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234AD5BD1CA2CDF300D24AA9 /* Debug */,
+				234AD5BE1CA2CDF300D24AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		234AD5BF1CA2CDF300D24AA9 /* Build configuration list for PBXNativeTarget "CleverNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234AD5C01CA2CDF300D24AA9 /* Debug */,
+				234AD5C11CA2CDF300D24AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60BA4221D3236A600071294 /* Build configuration list for PBXNativeTarget "PickerFileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60BA4231D3236A600071294 /* Debug */,
+				F60BA4241D3236A600071294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60BA4251D3236A600071294 /* Build configuration list for PBXNativeTarget "Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60BA4261D3236A600071294 /* Debug */,
+				F60BA4271D3236A600071294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 234AD5A51CA2CDF300D24AA9 /* Project object */;
+}

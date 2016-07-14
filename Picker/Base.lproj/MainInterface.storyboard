@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="J6p-g8-CHO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Document Picker View Controller-->
+        <scene sceneID="Q8I-MS-tKG">
+            <objects>
+                <viewController id="J6p-g8-CHO" customClass="DocumentPickerViewController" customModule="Picker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hST-wJ-eYy"/>
+                        <viewControllerLayoutGuide type="bottom" id="UQD-kz-Mfv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vdh-Gp-eV6">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4qd-OD-R5g">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCell" id="wDd-mN-gs6">
+                                        <rect key="frame" x="0.0" y="28" width="350" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wDd-mN-gs6" id="qMX-eF-8dC">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="J6p-g8-CHO" id="UcE-o0-Ef7"/>
+                                    <outlet property="delegate" destination="J6p-g8-CHO" id="kx2-FX-bpo"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQn-yd-HeS">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CleverNote Only Supports .txt files" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="al7-bl-K0B">
+                                        <rect key="frame" x="43" y="190" width="265" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dS1-p9-dDu">
+                                        <rect key="frame" x="8" y="185" width="334" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8Rx-Xd-W6b"/>
+                                        </constraints>
+                                        <state key="normal" title="Confirm"/>
+                                        <connections>
+                                            <action selector="confirmButtonTapped:" destination="J6p-g8-CHO" eventType="touchUpInside" id="khz-Vn-9h5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dS1-p9-dDu" firstAttribute="centerY" secondItem="dQn-yd-HeS" secondAttribute="centerY" id="2CJ-IW-I5j"/>
+                                    <constraint firstAttribute="trailing" secondItem="dS1-p9-dDu" secondAttribute="trailing" constant="8" id="IqA-9y-Ts4"/>
+                                    <constraint firstItem="dS1-p9-dDu" firstAttribute="leading" secondItem="dQn-yd-HeS" secondAttribute="leading" constant="8" id="cvT-jU-5po"/>
+                                    <constraint firstItem="al7-bl-K0B" firstAttribute="centerY" secondItem="dQn-yd-HeS" secondAttribute="centerY" id="fbt-Or-m7s"/>
+                                    <constraint firstItem="al7-bl-K0B" firstAttribute="centerX" secondItem="dQn-yd-HeS" secondAttribute="centerX" id="gnh-Au-nR5"/>
+                                    <constraint firstItem="dS1-p9-dDu" firstAttribute="centerX" secondItem="dQn-yd-HeS" secondAttribute="centerX" id="sd9-H1-ORz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4qd-OD-R5g" secondAttribute="trailing" id="3k5-7c-afI"/>
+                            <constraint firstItem="UQD-kz-Mfv" firstAttribute="top" secondItem="dQn-yd-HeS" secondAttribute="bottom" id="DOJ-7j-ieq"/>
+                            <constraint firstItem="dQn-yd-HeS" firstAttribute="top" secondItem="Vdh-Gp-eV6" secondAttribute="top" id="Nqb-N6-dhd"/>
+                            <constraint firstAttribute="trailing" secondItem="dQn-yd-HeS" secondAttribute="trailing" id="YbM-Rl-4kX"/>
+                            <constraint firstItem="dQn-yd-HeS" firstAttribute="leading" secondItem="Vdh-Gp-eV6" secondAttribute="leading" id="bpa-fX-WCE"/>
+                            <constraint firstItem="UQD-kz-Mfv" firstAttribute="top" secondItem="4qd-OD-R5g" secondAttribute="bottom" id="lRy-xM-kZk"/>
+                            <constraint firstItem="4qd-OD-R5g" firstAttribute="top" secondItem="Vdh-Gp-eV6" secondAttribute="topMargin" id="qEH-7p-tL6"/>
+                            <constraint firstItem="4qd-OD-R5g" firstAttribute="leading" secondItem="Vdh-Gp-eV6" secondAttribute="leading" id="sUv-sX-FrX"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="350" height="400"/>
+                    <connections>
+                        <outlet property="confirmButton" destination="dS1-p9-dDu" id="RWq-U0-LFS"/>
+                        <outlet property="confirmView" destination="dQn-yd-HeS" id="ea5-6G-oGg"/>
+                        <outlet property="extensionWarningLabel" destination="al7-bl-K0B" id="qU2-gM-ESF"/>
+                        <outlet property="tableView" destination="4qd-OD-R5g" id="2Cb-UY-VkW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UoZ-ya-W3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-459" y="-133"/>
+        </scene>
+    </scenes>
+</document>
